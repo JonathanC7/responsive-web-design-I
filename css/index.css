@@ -1,3 +1,261 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
 
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	display: flex;
+	justify-content: center;
+}
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+/* Page Wrapper */
+.page-wrapper{
+    width: 1000px;
+    background: lightcoral;
+}
+/* Navbar*/
+
+#navbar{
+	width: 1000px;
+	height: 60px;
+	z-index: 10;
+	background: linear-gradient(to right, blue, red); 
+	position: fixed;
+	display: flex;
+	justify-content: space-evenly;
+	top: 0;
+}
+.nav-link{
+	width: 115px;
+	height: 100%;
+	text-decoration: none;
+	color: white;
+	vertical-align: top; 
+	text-align: center;
+    padding-top: 15px;
+}
+
+/* Innovation On Demand */
+#innovation_container{
+	height: 450px;
+	margin-top: 85px;
+	display: flex;
+}
+#innovation_and_button{
+	width: 45%;
+	height: 100%;
+	vertical-align: top;
+	padding: 55px 95px 105px 75px;
+} 
+#innovation_on_demand{
+	font-size: 4.1rem;
+	text-align: center;
+}
+#get_started_button{
+	margin-left: 4%;
+	width: 95%;
+	height: 35px;
+	background: #37af65;
+	color: white;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: 'Anton', sans-serif;
+}
+/* Features and About Section */
+#features_about{
+	border-top: gray 2px solid;
+	display: flex;
+	justify-content: space-between; 
+}
+#features, #about{
+	width: 490px;
+}
+
+/* Services, Product, and Vision Section */
+#services_product_vision{
+	border-bottom: gray 2px solid;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-right: 10px;
+	width: 100%;
+}
+.ser_pro_vis{
+	width: 30%;
+	height: 220px;
+}
+/* Footer Section */
+#copyright{
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+/* Images */
+#image_container{
+	width: 50%;
+	height: 100%;
+	margin: 20px 10px 10px 60px;
+    background-repeat: no-repeat;
+    background-image: url(img/header-img.png);
+}
+.middle-img{
+	margin: 20px 0px 20px 0px; 
+	width: 100%;
+	height: 20vw;
+}
+.logo{ 
+	margin: 8px 0px 0px 80px;
+	height: 40px;
+	background-image: url(img/logo.png);
+	background-repeat: no-repeat;
+}
+
+.services-header-img{
+	width: 100%;
+}
+/* Hover Effects and Animations */
+#navbar .nav-link:hover{
+    animation-name: test;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    animation-direction: reverse; 
+}
+@keyframes test{
+    0% {
+        background-color: orange;
+    }
+    20%{
+        background-color: lightblue;
+    }
+    40%{
+        background-color: orange;
+    }
+    60%{
+        background-color: lightblue;
+    }
+    100%{
+        background-color: orange;
+    }
+}
+/* Service Page */
+.first-section{
+	border-bottom: black solid 1px;
+	padding-bottom: 15px;
+	margin-top: 30px;
+} 
+.middle-section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: fle;
+	align-content: space-around;
+	margin-top: 20px;
+}
+.middle-content{
+	width: 45%;
+	border: black solid 1px;
+	padding: 0px 20px 20px 20px;
+	background: rgb(233, 225, 225);
+	margin: 20px;
+}
+.middle-content h2{
+	font-size: 20px;
+}
+.learn-more{
+	border: black 1px solid;
+	height: 30px;
+	width: 120px;
+	font-family: cursive;
+	cursor: pointer;
+}
+.bottom-section{
+	display: flex;
+	justify-content: space-between;
+	border-top: black solid 2px;
+	margin: 20px 0px 60px 0px;
+	padding-top: 40px;
+	align-content: flex-start;
+}
+.bottom-content{
+	width: 50%;
+}
+
+/* 800px */
+@media (max-width: 800px){
+    .page-wrapper{
+        width: 700px;
+    }
+    #navbar{
+        width: 700px;
+    }
+    .nav-link{
+        width: 120px;
+    }
+    #image_container{
+        display: none;
+        background: none;
+    }
+    #innovation_container{
+        display: flex;
+        justify-content: center;
+    }
+} 
