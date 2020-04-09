@@ -68,8 +68,7 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 /* Page Wrapper */
 .page-wrapper{
-    width: 1000px;
-    background: lightcoral;
+	width: 1000px;
 }
 /* Navbar*/
 
@@ -159,15 +158,20 @@ h1, h2, h3, h4, h5 {
     background-image: url(img/header-img.png);
 }
 .middle-img{
-	margin: 20px 0px 20px 0px; 
-	width: 100%;
-	height: 20vw;
+	width: 120vw;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-image: url(img/mid-page-accent.jpg);
+	background-size: 1000px 200px;
 }
 .logo{ 
-	margin: 8px 0px 0px 80px;
-	height: 40px;
+	margin: 8px 0px 0px 10px;
+	padding: 50px 100px 0px 100px;
+	width: 100px;
+	height: 10px;
 	background-image: url(img/logo.png);
 	background-repeat: no-repeat;
+	z-index: 15;
 }
 
 .services-header-img{
@@ -206,7 +210,7 @@ h1, h2, h3, h4, h5 {
 .middle-section{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: fle;
+	justify-content: flex;
 	align-content: space-around;
 	margin-top: 20px;
 }
@@ -245,17 +249,38 @@ h1, h2, h3, h4, h5 {
         width: 700px;
     }
     #navbar{
-        width: 700px;
+		width: 700px;
+		height: 120px;
     }
     .nav-link{
-        width: 120px;
+		width: 120px;
+		height: 50px;
+		margin-top: 70px;
     }
     #image_container{
         display: none;
         background: none;
-    }
+	}
     #innovation_container{
         display: flex;
         justify-content: center;
-    }
+	}
+	#innovation_on_demand{
+		display: flex;
+		justify-content: center;
+	}
+	.bottom-section{
+		margin-bottom: 300px;
+	}
+	.logo{
+		position: absolute;
+		top: 15px;
+	}
+	.middle-img{
+		height: 150px;
+		background-size: 700px 150px;
+	}
+	#services_product_vision{
+		padding-bottom: 50px;
+	}
 } 
